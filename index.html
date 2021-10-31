@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
     <link rel="stylesheet" href="assets/css/style.css"/>
     <title>Franquia</title>
+    <meta name="description" content="Melhores franquias atualmente">
 </head>
 
 <body>
     <header>
-        <div class="banner">
+        <aside class="banner">
             <div class="line"></div>
             <div class="header">
                 <div class="logo">
@@ -36,7 +37,7 @@
                 </div>
                 <img onclick="menuTogle()" class="menu-opener" src="assets/images/menu.png"/>
             </div> 
-        </div>
+        </aside>
     </header>
     <main>
         <section class="area1">
@@ -53,10 +54,11 @@
                 <div class="area1-left--bottom">
                     <div class="title">
                         <h3>Sobre a franquia</h3>
+                        <article>
                         <p>Em 1976 junto com o surgimento do conceito Fast-Food no mercado, começa a história da franquia <em>Mister Sheik.</em> A empresa destaca-se no mercado como pioneiros em servir comida árabe com sabor brasileiro.<br/><br/>
-                            Com cinco anos de mercado o grupo se consolida como rede de alimentação e abre sua primeira loja com a marca Mister Sheik. Mantendo a qualidade dos produtos e do atendimento em pouco tempo vira sucesso entre as redes de Fast-Food e abre sua primeira operação no seguimento de franquias. Com uma cozinha própria especializada, um cardápio variado que agrada até os paladares mais exigentes que a empresa firma seu slogan, fazendo ‘’a melhor esfiha’’ nos quatro cantos do país. Além das deliciosas esfihas, o cardápio oferece pratos, beirutes, porções e combos que cabem no bolso dos clientes.<br/><br/>
-                            
+                            Com cinco anos de mercado o grupo se consolida como rede de alimentação e abre sua primeira loja com a marca Mister Sheik. Mantendo a qualidade dos produtos e do atendimento em pouco tempo vira sucesso entre as redes de Fast-Food e abre sua primeira operação no seguimento de franquias. Com uma cozinha própria especializada, um cardápio variado que agrada até os paladares mais exigentes que a empresa firma seu slogan, fazendo ‘’a melhor esfiha’’ nos quatro cantos do país. Além das deliciosas esfihas, o cardápio oferece pratos, beirutes, porções e combos que cabem no bolso dos clientes.<br/><br/>                       
                             Com dedicação e profissionalismo em atender os consumidores que a Franquia Mister Sheik faz sua história no mercado e é uma oportunidade de negócio reconhecida com um know-how de mais de 25 anos.</p>
+                            </article>
                     </div>
                 </div>
             </div>
@@ -69,7 +71,7 @@
                         <h4>Anos de Fundação:</h4>
                         <h5>1991</h5>
                     </div>
-                    <div class="date-one1">
+                    <div class="date-one">
                         <h4>Inicio do Franchising:</h4>
                         <h5>1993</h5>
                     </div>
@@ -218,39 +220,20 @@
                 <a href="#"><img src="assets/images/twitter_footer.png"/></a>
             </div>
         </div><hr/>
-
-        <div class="footer-bottom">
-          <div class="footer-bottom-end">
-            <div class="logo-fim">
-                <img src="assets/images/cherto.png"/>
-                <h4>Uma empresa do Grupo Cherto Consultoria em Franquias</h4>
-            </div>
-            <div class="text-fim">
-                <h4>Cherto Consultoria Empresarial - CNPJ: 02.197.178/0001-08</h4>
-            </div>
-          </div>
-          <div class="contacts">
-          <div class="contact">
-              <h4>Contato</h4>
-              <h5>(11) 3549-9910<br/>
-                (11) 9 9180 6989<img src="assets/images/icon-whatsapp-green.png"/></h5>
-                <h6>De segundas
-                    às sextas-feiras das
-                    09h00 às 19h00</h6>
-          </div>
-          <div class="endrees">
-              <h4>Endereço</h4>
-              <p>Av. Paulista, 1337
-                Jardim Paulista, São Paulo
-                SP, 01311-200</p>
-          </div>
-        </div>
-        </div>
         <div class="credito">
             <p>@2021 - Todos os direitos reservados criação e desenvolvimento - <a href="">Chleba Agência digital</a></p>
         </div>
     </footer>
         
-    <script src="franquia.js"></script>
+    <script>
+        function menuTogle(){
+            let nav = document.querySelector('nav');
+            if(nav.style.display == 'none') {
+                nav.style.display = 'block';
+            } else{
+                nav.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>
