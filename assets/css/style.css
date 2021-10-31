@@ -34,8 +34,8 @@ header {
 .menu-opener {
     display: none;
 }
-.menu nav {
-    display: flex;
+.open-nav{
+    display: block;
 }
 .menu ul {
     display: flex;
